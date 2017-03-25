@@ -71,6 +71,10 @@ $ npm start -- --app bar
 ```
 _Does not rely on any global dependencies._
 
+# Run app on Heroku
+```bash
+heroku config:set NPM_CONFIG_PRODUCTION=false
+```
 # How to start with AoT compilation
 
 **Note** that AoT compilation requires **node v6.5.0 or higher** and **npm 3.10.3 or higher**.

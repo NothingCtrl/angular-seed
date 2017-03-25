@@ -10,6 +10,8 @@ import { SeedConfig } from './seed.config';
 export class ProjectConfig extends SeedConfig {
 
   PROJECT_TASKS_DIR = join(process.cwd(), this.TOOLS_DIR, 'tasks', 'project');
+  // set the port of our application
+  // process.env.PORT lets the port be set by Heroku
   PORT = process.env.PORT || 1234;
 
   constructor() {
