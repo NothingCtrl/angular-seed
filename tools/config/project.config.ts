@@ -10,6 +10,7 @@ import { SeedConfig } from './seed.config';
 export class ProjectConfig extends SeedConfig {
 
   PROJECT_TASKS_DIR = join(process.cwd(), this.TOOLS_DIR, 'tasks', 'project');
+  PORT = process.env.PORT || 1234;
 
   constructor() {
     super();
